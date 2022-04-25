@@ -1,0 +1,41 @@
+@import "src/app/layout/variables";
+
+.main-header {
+  margin-bottom: 10px;
+  box-shadow: 0 0 3px grey;
+  background-color: white;
+  display: flex;
+  align-items: center;
+
+  .cart {
+    display: flex;
+    justify-content: end;
+  }
+
+  .hyper-links {
+    display: flex;
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: 5px;
+
+    .link-icon {
+      color: $background-color;
+    }
+
+    .link {
+      font-size: 18px;
+      color: $background-color;
+      font-weight: lighter;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.main-body {
+  box-shadow: 0 0 3px grey;
+  background-color: white;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+}

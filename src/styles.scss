@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/app/layout/variables";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  background-color: $background-color;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 2px grey;
+}
