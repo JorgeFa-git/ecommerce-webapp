@@ -4,21 +4,36 @@
       <div class="main-logo">
         <img src="assets/logoipsum-logo-9.svg" alt="Logo"/>
       </div>
-      <div class="search-bar">
+      <div class="search-bar desktop-only">
         <mat-icon class="search-icon">search</mat-icon>
         <input placeholder="Search bar" class="search-input"/>
       </div>
       <div class="client-info">
+        <button mat-icon-button class="mobile-only"><mat-icon>search</mat-icon></button>
         <button mat-icon-button><mat-icon>shopping_cart</mat-icon></button>
         <button mat-icon-button><mat-icon class="account-icon">support_agent</mat-icon></button>
         <button mat-icon-button [mat-menu-trigger-for]="clientMenu"><mat-icon class="account-icon">account_circle</mat-icon></button>
       </div>
     </mat-toolbar-row>
     <mat-toolbar-row class="hyper-links">
-      <button mat-button [mat-menu-trigger-for]="menu" class="link col" href=""><mat-icon class="link-icon">menu</mat-icon>categories</button>
-      <a class="link col" href="">releases</a>
-      <a class="link col" href="">highlighted</a>
-      <a class="link col" href="">discounts</a>
+      <button mat-button [mat-menu-trigger-for]="menu" class="link col">
+        <mat-icon class="mobile-only">menu</mat-icon>
+        <span class="link-text desktop-only">
+          Categories
+        </span>
+      </button>
+      <button mat-button class="link col">
+        <mat-icon class="mobile-only">new_releases</mat-icon>
+        <span class="link-text desktop-only">Releases</span>
+      </button>
+      <button mat-button class="link col">
+        <mat-icon class="mobile-only">whatshot</mat-icon>
+        <span class="link-text desktop-only">Highlighted</span>
+      </button>
+      <button mat-button class="link col">
+        <mat-icon class="mobile-only">local_offer</mat-icon>
+        <span class="link-text desktop-only">Discounts</span>
+      </button>
     </mat-toolbar-row>
   </mat-toolbar>
 </div>
